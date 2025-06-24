@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD de Sabores de Sorvete</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Sabores de Sorvete 🍦</h1>
+  <form id="form">
+    <input type="text" id="nome" placeholder="Nome do sabor" required />
+    <select id="tipo">
+      <option value="tradicional">Tradicional</option>
+      <option value="vegano">Vegano</option>
+      <option value="diet">Diet</option>
+    </select>
+    <input type="number" id="valor" placeholder="Valor (R$)" min="0" step="0.01" required />
+    <button type="submit">Salvar</button>
+  </form>
+  <div class="lista-container">
+    <h2>Sabores Cadastrados</h2>
+    <ul id="lista"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
