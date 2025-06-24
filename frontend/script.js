@@ -1,7 +1,7 @@
 
 const form = document.getElementById("form");
 const lista = document.getElementById("lista");
-const url = "http://localhost:3000/sabores";
+const url = "/api/sabores";
 
 let sabores = [];
 
